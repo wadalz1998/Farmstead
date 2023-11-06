@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Volkhov", serif;
+}
+header {
+    margin: 20px auto;
+    /* position: fixed; */
+}
+header .headerMenu {
+    justify-content: space-between;
+}
+header .headerMenu a {
+    text-decoration: none;
+    color: #fb811e;
+    transition: all 0.5s;
+}
+header .headerMenu a:hover {
+    color: black;
+}
+header .iconMenu {
+    margin: auto 0;
+    font-size: 25px;
+}
+header .iconMenu .btnSearch {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+header .iconMenu .btnBars {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+header .iconMenu .dropdown-menu {
+    transform: translate3d(-140px, 39px, -8px) !important ;
+}
+header .iconMenu .dropdown-menu .dropdown-item {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+header .iconMenu .dropdown-menu .dropdown-item:hover {
+    color: #fb811e;
+}
+.navMenu {
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+}
+#myBody {
+    background-color: white;
+}
+#switchButton {
+    /* background-color: white;
+    border: 1px solid black; */
+    color: white;
+}
+#switchButton .fa-sun {
+    display: none;
+}
+#switchButton .fa-moon {
+    display: block;
+}
+.carouselFarmstead .homeMenu h1 {
+    color: #f4f4f4;
+    font-size: 120px;
+    font-weight: bold;
+    line-height: 0;
+}
+.carouselFarmstead .homeMenu .textBanner {
+    font-size: 50px;
+    padding: 0 45px;
+    font-weight: bold;
+}
+.carouselFarmstead .homeMenu .textPBanner {
+    padding: 0 45px;
+}
+.carouselFarmstead .homeMenu .textCarouslLeft {
+    margin-top: 5%;
+    position: absolute;
+    z-index: 1;
+    left: 12rem;
+    width: 100%;
+    padding: 0 10px;
+    top: 30%;
+}
+#carouselExampleIndicators {
+    height: 100vh;
+}
+#carouselExampleIndicators .carouselBannerFarm .carousel-item:nth-child(1) {
+    background-image: url("../img/b1.jpg");
+}
+#carouselExampleIndicators .carouselBannerFarm .carousel-item:nth-child(2) {
+    background-image: url("../img/b4.jpg");
+}
+#carouselExampleIndicators .carouselBannerFarm .carousel-item:nth-child(3) {
+    background-image: url("../img/b8.jpg");
+}
+#carouselExampleIndicators .carouselBannerFarm .carousel-item {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0 0 0 1rem;
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: orange;
+}
+
+/* .carouselFarmstead .homeMenu .outsideBtnLearnMore {
+    padding: 0 45px;
+}
+.carouselFarmstead .homeMenu .outsideBtnLearnMore .btnLearnMore {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(251, 129, 30);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+} */
+.btnOutSideMoreInfo {
+    padding: 0 45px;
+}
+.btnMoreInfo {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(251, 129, 30);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.btnMoreInfo:hover {
+    background-color: green;
+}
+/* growNatural */
+.growNatural .growTextLeft {
+    padding-top: 50px;
+}
+.growNatural .growTextLeft p:nth-child(1) {
+    color: #fb811e;
+    margin: 0;
+    line-height: 25px;
+    font-size: 1.3rem;
+}
+.growNatural .growIMGRight .card {
+    margin: 10px;
+}
+.growNatural .growIMGRight .card img {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+}
+.growNatural .growIMGRight .card-body {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.growNatural .growIMGRight .miniContentGrow {
+    padding: 30px 0 25px 0;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.growNatural .growIMGRight .miniContentGrow:hover {
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.growNatural .growIMGRight .miniContentGrow a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+}
+.growNatural .growIMGRight .miniContentGrow a:hover {
+    color: green;
+}
+
+/* whatWeDo */
+.whatWeDo {
+    background-color: #009f4d;
+    position: relative;
+}
+.whatWeDo .textWhatWeDo {
+    color: white;
+    padding-top: 4rem;
+}
+.whatWeDo .textWhatWeDo p {
+    padding-top: 2rem;
+}
+.whatWeDo .servivecWhatWeDo {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    opacity: 0.14;
+    font-size: 12vw;
+    right: 25%;
+    top: -8%;
+}
+.whatWeDo .servivecWhatWeDo .customService {
+    width: 100%;
+}
+.customService .card {
+    border-radius: 20px !important;
+    border: 1px solid #009f4d;
+}
+.customService .card img {
+    border-radius: 20px 20px 0 0;
+}
+.customService .card label {
+    padding: 5px 20px;
+    color: green;
+    border: 1px solid #ebfaf1;
+    border-radius: 20px;
+    background-color: #ebfaf1;
+}
+.customService .card a {
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+}
+.customService .card a:hover {
+    color: green;
+}
+/* whyChooseUs */
+.whyChooseUs .whyChooseUsLeft {
+    align-self: center;
+}
+.whyChooseUs .whyChooseUsLeft .whyChooseUsText h4 {
+    color: orange;
+}
+.whyChooseUs .whyChooseUsLeft .whyChooseUsServices h3 {
+    font-size: 24px;
+}
+.whyChooseUs .whyChooseUsLeft .whyChooseUsServices i {
+    color: orange;
+}
+.whyChooseUs .whyChooseUsRight {
+    margin-left: auto;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    background-image: url("../img/image.jpg");
+    border-radius: 30px;
+    position: relative;
+}
+.whyChooseUs .whyChooseUsRight .imgInfo__box {
+    text-align: center;
+    width: 300px;
+    height: 187px;
+    color: white;
+    background-color: orange;
+    border-radius: 0 0 50% 0;
+    position: absolute;
+    bottom: 10%;
+    left: -25%;
+}
+/* galleryOurproduct */
+
+.galleryOurproduct img {
+    padding: 0 !important;
+    width: 100%;
+    height: 300px;
+}
+
+.galleryOurproduct .galleryText {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 40px;
+    background: rgb(255 255 255 / 27%);
+    margin: 20px;
+}
+/* farmService */
+
+.farmService a {
+    text-decoration: 0;
+    cursor: pointer;
+    color: black;
+}
+.farmService a:hover label {
+    color: green;
+    transition: all 0.5s;
+}
+.farmService img {
+    width: 100%;
+    height: auto;
+}
+.farmService label {
+    font-weight: bold !important;
+    font-size: 25px;
+}
+.farmService .customsFarmServices {
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.farmService .customsFarmServices:hover {
+    border: 1px solid #eee;
+    width: 100%;
+    height: 100%;
+}
+/* infoCustomer */
+.backgroundinfoCustomer {
+    height: 500px;
+    padding: 9rem 0;
+    margin: 9rem 0;
+}
+.infoCustomer .backgroundinfoCustomer {
+    background-image: url("../img/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.infoCustomer .backgroundinfoCustomer::after {
+    content: "";
+    background: rgb(10 10 10 / 52%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.backgroundinfoCustomer .carouselInfoCustomer h3 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.backgroundinfoCustomer .carouselInfoCustomer p {
+    color: white;
+    text-align: center;
+}
+.backgroundinfoCustomer .carouselInfoCustomer i {
+    color: white;
+}
+.backgroundinfoCustomer .carouselInfoCustomer img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+}
+.backgroundinfoCustomer .customLayoutinfoCustomer .carousel-indicators {
+    bottom: -60px;
+}
+/* footer */
+footer .footerHome a {
+    text-decoration: none;
+    color: #fb811e;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+}
+footer .footerHome a:hover {
+    color: black;
+}
+footer .iconFooter i {
+    padding: 9px 5px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ebfaf1;
+    color: green;
+}
+footer .btnEmail input {
+    border-radius: 20px 0 0 20px;
+}
+footer .btnFlyPaper {
+    width: 100%;
+    background-color: green;
+    border-radius: 0 20px 20px 0;
+}
